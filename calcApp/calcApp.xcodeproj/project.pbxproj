@@ -17,6 +17,7 @@
 		ED9493391D89D6F400C1C646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9493371D89D6F400C1C646 /* LaunchScreen.storyboard */; };
 		ED9493441D89D6F400C1C646 /* calcAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9493431D89D6F400C1C646 /* calcAppTests.swift */; };
 		ED94934F1D89D6F400C1C646 /* calcAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94934E1D89D6F400C1C646 /* calcAppUITests.swift */; };
+		EDECD6371D904F570088DE8F /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = EDECD6361D904F570088DE8F /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		ED94934A1D89D6F400C1C646 /* calcAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calcAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED94934E1D89D6F400C1C646 /* calcAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calcAppUITests.swift; sourceTree = "<group>"; };
 		ED9493501D89D6F400C1C646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDECD6361D904F570088DE8F /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		ED94932D1D89D6F400C1C646 /* calcApp */ = {
 			isa = PBXGroup;
 			children = (
+				EDECD6361D904F570088DE8F /* btn.wav */,
 				ED711FEA1D8C70D600FC2300 /* Minecraft.ttf */,
 				ED94932E1D89D6F400C1C646 /* AppDelegate.swift */,
 				ED9493301D89D6F400C1C646 /* ViewController.swift */,
@@ -237,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDECD6371D904F570088DE8F /* btn.wav in Resources */,
 				ED9493391D89D6F400C1C646 /* LaunchScreen.storyboard in Resources */,
 				ED9493361D89D6F400C1C646 /* Assets.xcassets in Resources */,
 				ED711FEB1D8C70D600FC2300 /* Minecraft.ttf in Resources */,

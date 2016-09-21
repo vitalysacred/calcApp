@@ -20,7 +20,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space-bg" translatesAutoresizingMaskIntoConstraints="NO" id="1e9-D5-2kM"/>
@@ -29,8 +29,8 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="BWE-un-thC">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="273" id="228-pE-MjX"/>
-                                    <constraint firstAttribute="height" constant="415" id="P11-6Z-dbl"/>
+                                    <constraint firstAttribute="width" constant="290" id="228-pE-MjX"/>
+                                    <constraint firstAttribute="height" constant="450" id="P11-6Z-dbl"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="t1N-sW-wPx">
@@ -39,7 +39,7 @@
                                     <constraint firstAttribute="width" constant="300" id="Jfw-Sh-SGu"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="KPw-bB-mhw">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="KPw-bB-mhw">
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="whW-Dm-waN">
                                         <subviews>
@@ -211,7 +211,24 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iVH-uI-Xpr">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsL-Qp-5Tg">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="d1v-iM-AOt"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="clear"/>
+                                                <connections>
+                                                    <action selector="clearBynPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VjG-WX-Epa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="bsL-Qp-5Tg" firstAttribute="leading" secondItem="9rY-UC-G2K" secondAttribute="leading" id="ZDw-fe-vgS"/>
+                                    <constraint firstItem="bsL-Qp-5Tg" firstAttribute="trailing" secondItem="9rY-UC-G2K" secondAttribute="trailing" id="o7k-wC-cB6"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="245453346346346" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khm-zp-vBv">
                                 <constraints>
@@ -230,14 +247,14 @@
                             <constraint firstItem="t1N-sW-wPx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OJB-46-kKR"/>
                             <constraint firstItem="KPw-bB-mhw" firstAttribute="centerX" secondItem="BWE-un-thC" secondAttribute="centerX" id="OJx-4T-QAT"/>
                             <constraint firstAttribute="trailing" secondItem="1e9-D5-2kM" secondAttribute="trailing" id="Pwh-ba-kQJ"/>
-                            <constraint firstItem="t1N-sW-wPx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="UJU-WE-KpS"/>
+                            <constraint firstItem="t1N-sW-wPx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="UJU-WE-KpS"/>
                             <constraint firstItem="1e9-D5-2kM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZNi-8c-jRl"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uN3-Az-Oet" secondAttribute="bottom" id="ZaW-T1-VIC"/>
                             <constraint firstItem="KPw-bB-mhw" firstAttribute="centerY" secondItem="BWE-un-thC" secondAttribute="centerY" id="dTg-Xi-S00"/>
                             <constraint firstItem="uN3-Az-Oet" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dnc-q2-GPr"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1e9-D5-2kM" secondAttribute="bottom" id="p85-mS-CCi"/>
                             <constraint firstAttribute="trailing" secondItem="uN3-Az-Oet" secondAttribute="trailing" id="qWJ-0A-N6b"/>
-                            <constraint firstItem="BWE-un-thC" firstAttribute="top" secondItem="t1N-sW-wPx" secondAttribute="bottom" constant="16" id="r5l-lI-vur"/>
+                            <constraint firstItem="BWE-un-thC" firstAttribute="top" secondItem="t1N-sW-wPx" secondAttribute="bottom" constant="5" id="r5l-lI-vur"/>
                             <constraint firstItem="Khm-zp-vBv" firstAttribute="centerY" secondItem="t1N-sW-wPx" secondAttribute="centerY" constant="5" id="rSW-C9-VaL"/>
                             <constraint firstItem="1e9-D5-2kM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w5Z-71-sSM"/>
                         </constraints>
@@ -248,7 +265,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="135" y="138.38028169014083"/>
         </scene>
     </scenes>
     <resources>
@@ -264,6 +281,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>

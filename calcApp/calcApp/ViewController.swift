@@ -47,6 +47,16 @@ class ViewController: UIViewController {
         precessedOperation(operation: currentOperation)
     }
 
+    @IBAction func clearBynPressed(_ sender: UIButton) {
+        btnSound.play()
+        runningNumbers = ""
+        leftValStr = ""
+        rightValStr = ""
+        //result = ""
+        currentOperation = Operation.Empty
+        outPutLbl.text = "0"
+    }
+    
 
     @IBAction func numberPressed(sender: UIButton) {
         playSound()
